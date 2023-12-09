@@ -15,10 +15,7 @@ export default function ColorLink({
   return (
     <Link
       href={href}
-      className={`${
-        (clicked && `text-${changedColor} border-b-2 border-${changedColor}`) ||
-        `text-gray-500`
-      } `}
+      className={`${(clicked && `text-${changedColor} `) || `text-gray-500`} `}
     >
       {name}
     </Link>

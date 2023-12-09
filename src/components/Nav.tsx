@@ -7,8 +7,8 @@ export default function Nav() {
   const pathname = usePathname();
   const menu = [
     {
-      name: "categories",
-      href: "/categories",
+      name: "All",
+      href: "/all",
       changedColor: "blue-500",
     },
     {
@@ -23,7 +23,7 @@ export default function Nav() {
     },
   ];
   return (
-    <nav className="flex gap-6 font-medium max-md:hidden">
+    <nav className="gap-6 font-medium flex ml-4">
       {menu.map((item) => (
         <ColorLink
           key={item.name}
